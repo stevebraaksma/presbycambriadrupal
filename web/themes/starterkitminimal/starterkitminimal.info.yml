@@ -1,0 +1,22 @@
+name: starterkitminimal
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - starterkitminimal/base
+  - starterkitminimal/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - starterkitminimal/user
+  core/drupal.dropbutton:
+    - starterkitminimal/dropbutton
+  core/drupal.dialog:
+    - starterkitminimal/dialog
+  file/drupal.file:
+    - starterkitminimal/file
+  core/drupal.progress:
+    - starterkitminimal/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.4'
