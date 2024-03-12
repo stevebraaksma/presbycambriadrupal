@@ -69,7 +69,7 @@
 #}
 {%
   set classes = [
-    'special-basic-page',
+    'homepage-content-type',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -79,8 +79,11 @@
   ]
 %}
 {{ attach_library('starterkitminimal/node') }}
+
+
 <article{{ attributes.addClass(classes) }}>
 
+{#
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -91,6 +94,7 @@
 
   <h1>Here is where to put the page</h1>
 
+  
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
@@ -99,7 +103,8 @@
         {{ metadata }}
       </div>
     </footer>
-  {% endif %}
+  {% endif %}  
+
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
@@ -107,7 +112,13 @@
 
 </article>
 
+#}
 
 <h1>Here is where to put the page</h1>
 
-{{ content }}
+<p>divider</p>
+{{ content.field_textfield1 }}
+{{ content.field_textfield2 }}
+
+
+
