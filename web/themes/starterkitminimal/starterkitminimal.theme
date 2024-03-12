@@ -19,3 +19,7 @@ function starterkitminimal_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+function theme_preprocess(&$variables, $hook) {
+    $variables['base_path'] = base_path();
+}

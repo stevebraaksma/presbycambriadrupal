@@ -146,7 +146,8 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css" />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/pcusa-color-logo.gif" />
+    <link rel="shortcut icon" href="/{{ base_path ~ directory }}/images/pcusa-color-logo.gif" />
+    
   </head>
   <body
     class="scrollspy-example"
@@ -163,7 +164,7 @@
       >
         <div class="container">
           <a class="navbar-brand d-block d-lg-none ms-2 me-0" href="#!"
-            ><img src="img/pcusa-color-logo.gif" alt="..." width="60"
+            ><img src="/{{ base_path ~ directory }}/images/pcusa-color-logo.gif" alt="..." width="60"
           /></a>
           <ul class="ps-0 pt-3">
             <li class="navbar-nav d-block d-lg-none">
@@ -204,7 +205,7 @@
             <ul class="navbar-nav d-none d-lg-block px-4 text-center ms-5">
               <li class="nav-item m-0 pt-1 pb-1">
                 <a class="navbar-brand m-0" href="#!"
-                  ><img src="img/pcusa-color-logo.gif" alt="..." width="60"
+                  ><img src="/{{ base_path ~ directory }}/images/pcusa-color-logo.gif" alt="..." width="60"
                 /></a>
               </li>
               <li class="nav-item m-0 lead text-white text-uppercase">
@@ -238,11 +239,11 @@
         <div class="swiper-wrapper">
           <!-- <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(img/hero-68153-Reflection-1920x1144.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/hero-68153-Reflection-1920x1144.jpg)"
           > -->
           <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(img/hero-68153-Reflection-1920x1144.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/hero-68153-Reflection-1920x1144.jpg)"
           >
             <div class="container text-white py-5 my-5 index-forward">
               <h1 class="text-uppercase text-xl mt-5">
@@ -268,7 +269,7 @@
 
           <!-- <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(img/hero-bg-3.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/hero-bg-3.jpg)"
           >
             <div class="container text-white py-5 my-5 index-forward">
               <h1 class="text-uppercase text-xl mt-5">Way to god</h1>
@@ -286,7 +287,7 @@
 
           <!-- <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(img/hero-bg-1.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/hero-bg-1.jpg)"
           >
             <div class="container text-white py-5 my-5 index-forward">
               <h1 class="text-uppercase text-xl mt-5">God is love</h1>
@@ -477,7 +478,7 @@
         <div class="row align-items-stretch">
           <div
             class="col-lg-6 half-page-banner bg-cover"
-            style="background: url(img/rice.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/rice.jpg)"
           ></div>
           <div class="col-lg-6 bg-light py-lg-5">
             <div class="h-100 d-flex flex-column p-5 justify-content-center">
@@ -562,7 +563,7 @@
                   </p>
                 </li> -->
               </ul>
-              <!-- <img class="mb-3" src="img/signature.png" alt="..." width="90" /> -->
+              <!-- <img class="mb-3" src="/{{ base_path ~ directory }}/images/signature.png" alt="..." width="90" /> -->
               <!-- <h6 class="text-uppercase mb-0">Richard Wood</h6> -->
               <p class="text-serif text-primary text-small mb-0">
                 DONATIONS ARE ALWAYS WELCOMED & APPRECIATED
@@ -585,7 +586,7 @@
               <div class="overlay-content">
                 <img
                   class="img-fluid w-100"
-                  src="img/sermon-1.jpg"
+                  src="/{{ base_path ~ directory }}/images/sermon-1.jpg"
                   alt="..."
                 /></div
             ></a>
@@ -603,7 +604,7 @@
               <div class="overlay-content">
                 <img
                   class="img-fluid w-100"
-                  src="img/sermon-2.jpg"
+                  src="/{{ base_path ~ directory }}/images/sermon-2.jpg"
                   alt="..."
                 /></div
             ></a>
@@ -623,7 +624,7 @@
               <div class="overlay-content">
                 <img
                   class="img-fluid w-100"
-                  src="img/sermon-3.jpg"
+                  src="/{{ base_path ~ directory }}/images/sermon-3.jpg"
                   alt="..."
                 /></div
             ></a>
@@ -646,7 +647,7 @@
     <!-- <section
       class="bg-cover bg-fixed shadow-inner"
       id="volunteer"
-      style="background: url(img/divider-img.jpg)"
+      style="background: url(/{{ base_path ~ directory }}/images/divider-img.jpg)"
     >
       <div class="primary-overlay py-5">
         <div class="overlay-content z-index-20 position-relative py-5">
@@ -743,7 +744,7 @@
           </div>
           <div
             class="col-lg-6 half-page-banner bg-cover bg-center order-1 order-lg-2"
-            style="background: url(img/img-donation.jpg)"
+            style="background: url(/{{ base_path ~ directory }}/images/img-donation.jpg)"
           ></div>
         </div>
       </div>
@@ -803,7 +804,7 @@
           <div class="col-lg-6">
             <div
               class="contact-img bg-center bg-cover"
-              style="height: 30rem; background: url(img/CambriaChurch.jpg)"
+              style="height: 30rem; background: url(/{{ base_path ~ directory }}/images/CambriaChurch.jpg)"
             ></div>
           </div>
           <div class="col-lg-6">
@@ -861,16 +862,16 @@
       <div class="container pb-5">
         <div class="row align-items-center text-center gy-2">
           <div class="col-lg-3 col-sm-6">
-            <img src="img/logo-1.svg" alt="..." width="120" />
+            <img src="/{{ base_path ~ directory }}/images/logo-1.svg" alt="..." width="120" />
           </div>
           <div class="col-lg-3 col-sm-6">
-            <img src="img/logo-2.svg" alt="..." width="120" />
+            <img src="/{{ base_path ~ directory }}/images/logo-2.svg" alt="..." width="120" />
           </div>
           <div class="col-lg-3 col-sm-6">
-            <img src="img/logo-3.svg" alt="..." width="120" />
+            <img src="/{{ base_path ~ directory }}/images/logo-3.svg" alt="..." width="120" />
           </div>
           <div class="col-lg-3 col-sm-6">
-            <img src="img/logo-4.svg" alt="..." width="120" />
+            <img src="/{{ base_path ~ directory }}/images/logo-4.svg" alt="..." width="120" />
           </div>
         </div>
       </div>
@@ -882,7 +883,7 @@
       <div class="container pt-5">
         <!-- <div class="row mb-5 pb-5">
           <div class="col-md-4 col-sm-12">
-            <img class="mb-3" src="img/logo-footer.svg" alt="..." width="140" />
+            <img class="mb-3" src="/{{ base_path ~ directory }}/images/logo-footer.svg" alt="..." width="140" />
             <p class="text-small text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
