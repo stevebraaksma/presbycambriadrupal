@@ -17,3 +17,6 @@
     font-size: 80%;
   }
 }
+.min-width-240 {
+  min-width: 240px;
+}

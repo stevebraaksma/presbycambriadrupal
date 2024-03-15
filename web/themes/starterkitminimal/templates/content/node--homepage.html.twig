@@ -116,6 +116,8 @@
 
 <h1>Here is where to put the page</h1>
 
+{{ drupal_view('testing_the_view', 'block_1') }}
+
 <p>divider</p>
 {{ content.field_textfield1 }}
 {{ content.field_textfield2 }}
@@ -139,12 +141,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Playfair+Display:500i&amp;display=swap"
     />
+
+    {#
     <!-- Swiper slider-->
-    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/{{ base_path ~ directory }}/vendor/swiper/swiper-bundle.min.css" />
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet" />
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css" />
+    #}
+
     <!-- Favicon-->
     <link rel="shortcut icon" href="/{{ base_path ~ directory }}/images/pcusa-color-logo.gif" />
     
@@ -237,10 +243,10 @@
     <section class="text-center pt-lg-0 hero-home" id="hero">
       <div class="swiper hero-slider">
         <div class="swiper-wrapper">
-          <!-- <div
+          {#<!-- <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
             style="background: url(/{{ base_path ~ directory }}/images/hero-68153-Reflection-1920x1144.jpg)"
-          > -->
+          > -->#}
           <div
             class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
             style="background: url(/{{ base_path ~ directory }}/images/hero-68153-Reflection-1920x1144.jpg)"
@@ -259,49 +265,23 @@
                 </div>
 
                 <div class="col-lg-7 mx-auto">
-                  <a class="btn btn-primary px-4" href="#watch-online"
+                  <a class="btn btn-primary px-4 min-width-240 mb-4" href="#watch-online"
                     >Watch Online</a
                   >
+                </div>
+                <div class="col-lg-7 mx-auto">
+                  <a class="btn btn-outline-light px-4 min-width-240 mb-4" href="#!">Bulletin</a>
+                </div>
+                <div class="col-lg-7 mx-auto">
+                  <a class="btn btn-outline-primary px-4 min-width-240 mb-4" href="/calendar">Calendar</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- <div
-            class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(/{{ base_path ~ directory }}/images/hero-bg-3.jpg)"
-          >
-            <div class="container text-white py-5 my-5 index-forward">
-              <h1 class="text-uppercase text-xl mt-5">Way to god</h1>
-              <div class="row">
-                <div class="col-lg-7 mx-auto">
-                  <p class="lead">
-                    Visit your local church and become a part of the flock by
-                    contributing to the community in any way you possibly can.
-                  </p>
-                  <a class="btn btn-primary px-4" href="text.html">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+       
 
-          <!-- <div
-            class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center"
-            style="background: url(/{{ base_path ~ directory }}/images/hero-bg-1.jpg)"
-          >
-            <div class="container text-white py-5 my-5 index-forward">
-              <h1 class="text-uppercase text-xl mt-5">God is love</h1>
-              <div class="row">
-                <div class="col-lg-7 mx-auto">
-                  <p class="lead">
-                    Visit your local church and become a part of the flock by
-                    contributing to the community in any way you possibly can.
-                  </p>
-                  <a class="btn btn-primary px-4" href="text.html">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+   
         </div>
 
         <!-- these are the next / prev buttons for hero  -->
@@ -953,11 +933,11 @@
       </div>
     </footer>
     <!-- JavaScript files-->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="vendor/progressbar.js/progressbar.js"></script>
-    <script src="js/front.js"></script>
+    <script src="/{{ base_path ~ directory }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    {#<script src="/{{ base_path ~ directory }}/vendor/swiper/swiper-bundle.min.js"></script>#}
+    <script src="/{{ base_path ~ directory }}/js/countdown.js"></script>
+    <script src="/{{ base_path ~ directory }}/vendor/progressbar.js/progressbar.js"></script>
+    <script src="/{{ base_path ~ directory }}/js/front.js"></script>
     <!-- <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite -

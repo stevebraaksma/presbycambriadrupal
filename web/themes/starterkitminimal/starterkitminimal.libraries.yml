@@ -1,5 +1,12 @@
 base:
   version: VERSION
+  js:
+    js/countdown.js: {}
+    js/front.js: {}
+    js/js-cookie.js: {}
+    vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+    # vendor/swiper/swiper-bundle.min.js: {}
+    vendor/progressbar.js/progressbar.js: {}
   css:
     theme:
       css/additional/style.blue.css:
