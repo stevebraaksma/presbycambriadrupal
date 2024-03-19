@@ -162,6 +162,28 @@
     data-bs-offset="0"
     tabindex="0"
   >
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          {{ drupal_view('calendar_view', 'block_1') }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
     <!-- navbar-->
     <header class="header">
       <nav
@@ -261,7 +283,7 @@
                     SUNDAYS AT 10:00AM <br />
                     121 W FLORENCE ST, CAMBRIA, WI
                   </p>
-                  <!-- <a class="btn btn-primary px-4" href="text.html">Read More</a> -->
+                  
                 </div>
 
                 <div class="col-lg-7 mx-auto">
@@ -273,8 +295,17 @@
                   <a class="btn btn-outline-light px-4 min-width-240 mb-4" href="#!">Bulletin</a>
                 </div>
                 <div class="col-lg-7 mx-auto">
-                  <a class="btn btn-outline-primary px-4 min-width-240 mb-4" href="/calendar">Calendar</a>
+                  <a class="btn btn-outline-light px-4 min-width-240 mb-4" href="/calendar">Calendar</a>
                 </div>
+
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch demo modal
+                </button>
+
+
+
+
               </div>
             </div>
           </div>
