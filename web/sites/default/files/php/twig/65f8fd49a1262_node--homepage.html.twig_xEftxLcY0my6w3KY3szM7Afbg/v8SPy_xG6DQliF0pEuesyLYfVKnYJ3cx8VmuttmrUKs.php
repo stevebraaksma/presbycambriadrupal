@@ -110,11 +110,11 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
     tabindex=\"0\"
   >
 
-  <div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">
+  <div class=\"modal fade\" id=\"calendarModal\" tabindex=\"-1\" aria-labelledby=\"calendarModalLabel\" aria-hidden=\"true\">
     <div class=\"modal-dialog\">
       <div class=\"modal-content\">
         <div class=\"modal-header\">
-          <h5 class=\"modal-title\" id=\"exampleModalLabel\">Calendar</h5>
+          <h5 class=\"modal-title\" id=\"calendarModalLabel\">Calendar</h5>
           <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
         </div>
         <div class=\"modal-body mt-3\">
@@ -124,6 +124,30 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         echo "
           ";
         // line 175
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("duplicate_of_calendar_view", "block_1"), "html", null, true);
+        echo "
+        </div>
+        <div class=\"modal-footer\">
+          <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=\"modal fade\" id=\"bulletinModal\" tabindex=\"-1\" aria-labelledby=\"bulletinModalLabel\" aria-hidden=\"true\">
+    <div class=\"modal-dialog\">
+      <div class=\"modal-content\">
+        <div class=\"modal-header\">
+          <h5 class=\"modal-title\" id=\"bulletinModalLabel\">Calendar</h5>
+          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+        </div>
+        <div class=\"modal-body mt-3\">
+          ";
+        // line 192
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("calendar_view", "block_1"), "html", null, true);
+        echo "
+          ";
+        // line 193
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("duplicate_of_calendar_view", "block_1"), "html", null, true);
         echo "
         </div>
@@ -146,8 +170,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <div class=\"container\">
           <a class=\"navbar-brand d-block d-lg-none ms-2 me-0\" href=\"#!\"
             ><img src=\"/";
-        // line 195
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 195, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 195, $this->source)), "html", null, true);
+        // line 213
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 213, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 213, $this->source)), "html", null, true);
         echo "/images/pcusa-color-logo.gif\" alt=\"...\" width=\"60\"
           /></a>
           <ul class=\"ps-0 pt-3\">
@@ -190,8 +214,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
               <li class=\"nav-item m-0 pt-1 pb-1\">
                 <a class=\"navbar-brand m-0\" href=\"#!\"
                   ><img src=\"/";
-        // line 236
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 236, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 236, $this->source)), "html", null, true);
+        // line 254
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 254, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 254, $this->source)), "html", null, true);
         echo "/images/pcusa-color-logo.gif\" alt=\"...\" width=\"60\"
                 /></a>
               </li>
@@ -225,12 +249,12 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       <div class=\"swiper hero-slider\">
         <div class=\"swiper-wrapper\">
           ";
-        // line 272
+        // line 290
         echo "          <div
             class=\"swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center\"
             style=\"background: url(/";
-        // line 274
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 274, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 274, $this->source)), "html", null, true);
+        // line 292
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 292, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 292, $this->source)), "html", null, true);
         echo "/images/hero-68153-Reflection-1920x1144.jpg)\"
           >
             <div class=\"container text-white py-5 my-5 index-forward\">
@@ -259,10 +283,12 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 </div>
 
 
-                <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\">
-                  Launch demo modal
+                <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#calendarModal\">
+                  Calendar
                 </button>
-
+                <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#bulletinModal\">
+                  Bulletin
+                </button>
 
 
 
@@ -450,8 +476,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
           <div
             class=\"col-lg-6 half-page-banner bg-cover\"
             style=\"background: url(/";
-        // line 492
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 492, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 492, $this->source)), "html", null, true);
+        // line 512
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 512, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 512, $this->source)), "html", null, true);
         echo "/images/rice.jpg)\"
           ></div>
           <div class=\"col-lg-6 bg-light py-lg-5\">
@@ -538,8 +564,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 </li> -->
               </ul>
               <!-- <img class=\"mb-3\" src=\"/";
-        // line 577
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 577, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 577, $this->source)), "html", null, true);
+        // line 597
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 597, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 597, $this->source)), "html", null, true);
         echo "/images/signature.png\" alt=\"...\" width=\"90\" /> -->
               <!-- <h6 class=\"text-uppercase mb-0\">Richard Wood</h6> -->
               <p class=\"text-serif text-primary text-small mb-0\">
@@ -564,8 +590,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 600
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 600, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 600, $this->source)), "html", null, true);
+        // line 620
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 620, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 620, $this->source)), "html", null, true);
         echo "/images/sermon-1.jpg\"
                   alt=\"...\"
                 /></div
@@ -585,8 +611,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 618
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 618, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 618, $this->source)), "html", null, true);
+        // line 638
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 638, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 638, $this->source)), "html", null, true);
         echo "/images/sermon-2.jpg\"
                   alt=\"...\"
                 /></div
@@ -608,8 +634,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 638
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 638, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 638, $this->source)), "html", null, true);
+        // line 658
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 658, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 658, $this->source)), "html", null, true);
         echo "/images/sermon-3.jpg\"
                   alt=\"...\"
                 /></div
@@ -634,8 +660,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       class=\"bg-cover bg-fixed shadow-inner\"
       id=\"volunteer\"
       style=\"background: url(/";
-        // line 661
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 661, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 661, $this->source)), "html", null, true);
+        // line 681
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 681, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 681, $this->source)), "html", null, true);
         echo "/images/divider-img.jpg)\"
     >
       <div class=\"primary-overlay py-5\">
@@ -734,8 +760,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
           <div
             class=\"col-lg-6 half-page-banner bg-cover bg-center order-1 order-lg-2\"
             style=\"background: url(/";
-        // line 758
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 758, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 758, $this->source)), "html", null, true);
+        // line 778
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 778, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 778, $this->source)), "html", null, true);
         echo "/images/img-donation.jpg)\"
           ></div>
         </div>
@@ -797,8 +823,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
             <div
               class=\"contact-img bg-center bg-cover\"
               style=\"height: 30rem; background: url(/";
-        // line 818
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 818, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 818, $this->source)), "html", null, true);
+        // line 838
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 838, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 838, $this->source)), "html", null, true);
         echo "/images/CambriaChurch.jpg)\"
             ></div>
           </div>
@@ -858,26 +884,26 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <div class=\"row align-items-center text-center gy-2\">
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 876
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 876, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 876, $this->source)), "html", null, true);
+        // line 896
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 896, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 896, $this->source)), "html", null, true);
         echo "/images/logo-1.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 879
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 879, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 879, $this->source)), "html", null, true);
+        // line 899
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 899, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 899, $this->source)), "html", null, true);
         echo "/images/logo-2.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 882
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 882, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 882, $this->source)), "html", null, true);
+        // line 902
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 902, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 902, $this->source)), "html", null, true);
         echo "/images/logo-3.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 885
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 885, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 885, $this->source)), "html", null, true);
+        // line 905
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 905, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 905, $this->source)), "html", null, true);
         echo "/images/logo-4.svg\" alt=\"...\" width=\"120\" />
           </div>
         </div>
@@ -891,8 +917,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <!-- <div class=\"row mb-5 pb-5\">
           <div class=\"col-md-4 col-sm-12\">
             <img class=\"mb-3\" src=\"/";
-        // line 897
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 897, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 897, $this->source)), "html", null, true);
+        // line 917
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 917, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 917, $this->source)), "html", null, true);
         echo "/images/logo-footer.svg\" alt=\"...\" width=\"140\" />
             <p class=\"text-small text-muted\">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -964,21 +990,21 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
     </footer>
     <!-- JavaScript files-->
     <script src=\"/";
-        // line 967
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 967, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 967, $this->source)), "html", null, true);
+        // line 987
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 987, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 987, $this->source)), "html", null, true);
         echo "/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
     ";
-        // line 969
+        // line 989
         echo "    <script src=\"/";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 969, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 969, $this->source)), "html", null, true);
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 989, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 989, $this->source)), "html", null, true);
         echo "/js/countdown.js\"></script>
     <script src=\"/";
-        // line 970
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 970, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 970, $this->source)), "html", null, true);
+        // line 990
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 990, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 990, $this->source)), "html", null, true);
         echo "/vendor/progressbar.js/progressbar.js\"></script>
     <script src=\"/";
-        // line 971
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 971, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 971, $this->source)), "html", null, true);
+        // line 991
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 991, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 991, $this->source)), "html", null, true);
         echo "/js/front.js\"></script>
     <!-- <script>
       // ------------------------------------------------------- //
@@ -1043,7 +1069,7 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  981 => 971,  977 => 970,  972 => 969,  968 => 967,  895 => 897,  880 => 885,  874 => 882,  868 => 879,  862 => 876,  801 => 818,  738 => 758,  638 => 661,  612 => 638,  589 => 618,  568 => 600,  542 => 577,  454 => 492,  233 => 274,  229 => 272,  194 => 236,  150 => 195,  127 => 175,  123 => 174,  101 => 155,  97 => 153,  72 => 123,  68 => 122,  62 => 119,  57 => 116,  52 => 84,  46 => 81,  44 => 78,  43 => 77,  42 => 76,  41 => 75,  40 => 74,  39 => 71,);
+        return array (  1007 => 991,  1003 => 990,  998 => 989,  994 => 987,  921 => 917,  906 => 905,  900 => 902,  894 => 899,  888 => 896,  827 => 838,  764 => 778,  664 => 681,  638 => 658,  615 => 638,  594 => 620,  568 => 597,  480 => 512,  257 => 292,  253 => 290,  218 => 254,  174 => 213,  151 => 193,  147 => 192,  127 => 175,  123 => 174,  101 => 155,  97 => 153,  72 => 123,  68 => 122,  62 => 119,  57 => 116,  52 => 84,  46 => 81,  44 => 78,  43 => 77,  42 => 76,  41 => 75,  40 => 74,  39 => 71,);
     }
 
     public function getSourceContext()
