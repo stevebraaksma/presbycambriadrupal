@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* __string_template__87aa0545d216e38824f1e1bde8ca6514 */
-class __TwigTemplate_934d5d11e333b53b918011d2c534cca2 extends Template
+/* __string_template__48736678221aa8ffcd5583ffecf57fe8 */
+class __TwigTemplate_68187c1013d936e6ae38d4420cecb278 extends Template
 {
     private $source;
     private $macros = [];
@@ -39,20 +39,20 @@ class __TwigTemplate_934d5d11e333b53b918011d2c534cca2 extends Template
         echo "<div class=\"col-lg-7 mx-auto\">
      <a class=\"btn btn-outline-primary px-4 min-width-240 mb-4\" href=\"";
         // line 2
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["field_bulletin_file_upload"] ?? null), 2, $this->source), "html", null, true);
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["field_calendar_file_upload"] ?? null), 2, $this->source), "html", null, true);
         echo "\">";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["field_bulletin_file_link_title"] ?? null), 2, $this->source), "html", null, true);
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["field_calendar_file_link_title"] ?? null), 2, $this->source), "html", null, true);
         echo "</a>
 </div>";
         $this->env->getExtension('\Drupal\Core\Template\TwigExtension')
-            ->checkDeprecations($context, ["field_bulletin_file_upload", "field_bulletin_file_link_title"]);    }
+            ->checkDeprecations($context, ["field_calendar_file_upload", "field_calendar_file_link_title"]);    }
 
     /**
      * @codeCoverageIgnore
      */
     public function getTemplateName()
     {
-        return "__string_template__87aa0545d216e38824f1e1bde8ca6514";
+        return "__string_template__48736678221aa8ffcd5583ffecf57fe8";
     }
 
     /**
@@ -73,7 +73,7 @@ class __TwigTemplate_934d5d11e333b53b918011d2c534cca2 extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "__string_template__87aa0545d216e38824f1e1bde8ca6514", "");
+        return new Source("", "__string_template__48736678221aa8ffcd5583ffecf57fe8", "");
     }
     
     public function checkSecurity()

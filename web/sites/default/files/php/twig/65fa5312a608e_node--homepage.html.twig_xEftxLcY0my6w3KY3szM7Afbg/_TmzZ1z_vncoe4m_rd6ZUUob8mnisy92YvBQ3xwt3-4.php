@@ -110,18 +110,15 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
     tabindex=\"0\"
   >
 
-  <div class=\"modal fade\" id=\"calendarModal\" tabindex=\"-1\" aria-labelledby=\"calendarModalLabel\" aria-hidden=\"true\">
+
+  <div class=\"modal fade\" id=\"bulletinModal\" tabindex=\"-1\" aria-labelledby=\"bulletinModalLabel\" aria-hidden=\"true\">
     <div class=\"modal-dialog\">
       <div class=\"modal-content\">
         <div class=\"modal-header\">
-          <h5 class=\"modal-title\" id=\"calendarModalLabel\">Calendar</h5>
+          <h5 class=\"modal-title\" id=\"bulletinModalLabel\">Bulletin</h5>
           <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
         </div>
         <div class=\"modal-body mt-3\">
-          ";
-        // line 174
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("calendar_view", "block_1"), "html", null, true);
-        echo "
           ";
         // line 175
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("duplicate_of_calendar_view", "block_1"), "html", null, true);
@@ -134,21 +131,17 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
     </div>
   </div>
 
-  <div class=\"modal fade\" id=\"bulletinModal\" tabindex=\"-1\" aria-labelledby=\"bulletinModalLabel\" aria-hidden=\"true\">
+  <div class=\"modal fade\" id=\"calendarModal\" tabindex=\"-1\" aria-labelledby=\"calendarModalLabel\" aria-hidden=\"true\">
     <div class=\"modal-dialog\">
       <div class=\"modal-content\">
         <div class=\"modal-header\">
-          <h5 class=\"modal-title\" id=\"bulletinModalLabel\">Calendar</h5>
+          <h5 class=\"modal-title\" id=\"calendarModalLabel\">Calendar</h5>
           <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
         </div>
         <div class=\"modal-body mt-3\">
           ";
         // line 192
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("calendar_view", "block_1"), "html", null, true);
-        echo "
-          ";
-        // line 193
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, views_embed_view("duplicate_of_calendar_view", "block_1"), "html", null, true);
         echo "
         </div>
         <div class=\"modal-footer\">
@@ -157,8 +150,6 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       </div>
     </div>
   </div>
-
-
 
 
     <!-- navbar-->
@@ -170,8 +161,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <div class=\"container\">
           <a class=\"navbar-brand d-block d-lg-none ms-2 me-0\" href=\"#!\"
             ><img src=\"/";
-        // line 213
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 213, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 213, $this->source)), "html", null, true);
+        // line 210
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 210, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 210, $this->source)), "html", null, true);
         echo "/images/pcusa-color-logo.gif\" alt=\"...\" width=\"60\"
           /></a>
           <ul class=\"ps-0 pt-3\">
@@ -214,8 +205,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
               <li class=\"nav-item m-0 pt-1 pb-1\">
                 <a class=\"navbar-brand m-0\" href=\"#!\"
                   ><img src=\"/";
-        // line 254
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 254, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 254, $this->source)), "html", null, true);
+        // line 251
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 251, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 251, $this->source)), "html", null, true);
         echo "/images/pcusa-color-logo.gif\" alt=\"...\" width=\"60\"
                 /></a>
               </li>
@@ -249,12 +240,12 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       <div class=\"swiper hero-slider\">
         <div class=\"swiper-wrapper\">
           ";
-        // line 290
+        // line 287
         echo "          <div
             class=\"swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center\"
             style=\"background: url(/";
-        // line 292
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 292, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 292, $this->source)), "html", null, true);
+        // line 289
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 289, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 289, $this->source)), "html", null, true);
         echo "/images/hero-68153-Reflection-1920x1144.jpg)\"
           >
             <div class=\"container text-white py-5 my-5 index-forward\">
@@ -275,20 +266,17 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                     >Watch Online</a
                   >
                 </div>
+         
                 <div class=\"col-lg-7 mx-auto\">
-                  <a class=\"btn btn-outline-light px-4 min-width-240 mb-4\" href=\"#!\">Bulletin</a>
+                  <button type=\"button\" class=\"btn btn-outline-light px-4 min-width-240 mb-4\" data-bs-toggle=\"modal\" data-bs-target=\"#bulletinModal\">
+                    Bulletin
+                  </button>
                 </div>
                 <div class=\"col-lg-7 mx-auto\">
-                  <a class=\"btn btn-outline-light px-4 min-width-240 mb-4\" href=\"/calendar\">Calendar</a>
+                  <button type=\"button\" class=\"btn btn-outline-light px-4 min-width-240 mb-4\" data-bs-toggle=\"modal\" data-bs-target=\"#calendarModal\">
+                    Calendar
+                  </button>
                 </div>
-
-
-                <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#calendarModal\">
-                  Calendar
-                </button>
-                <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#bulletinModal\">
-                  Bulletin
-                </button>
 
 
 
@@ -469,6 +457,161 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       </div>
     </section> -->
 
+
+    <!-- Ministries Section-->
+
+    <div class=\"accordion\" id=\"accordionExample\">
+      <div class=\"accordion-item\">
+        <h2 class=\"accordion-header\" id=\"headingOne\">
+          <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id=\"collapseOne\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingOne\" data-bs-parent=\"#accordionExample\">
+          <div class=\"accordion-body\">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class=\"accordion-item\">
+        <h2 class=\"accordion-header\" id=\"headingTwo1\">
+          <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo1\" aria-expanded=\"false\" aria-controls=\"collapseTwo1\">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id=\"collapseTwo1\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo1\" data-bs-parent=\"#accordionExample\">
+          <div class=\"accordion-body\">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class=\"accordion-item\">
+        <h2 class=\"accordion-header\" id=\"headingThree\">
+          <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\" data-bs-parent=\"#accordionExample\">
+          <div class=\"accordion-body\">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+
+<section class=\"py-5\">
+      <div class=\"container py-5\">
+        <header class=\"mb-5\">
+          <p class=\"text-serif text-primary mb-0\">Heading level three</p>
+          <h2 class=\"mb-3\">More about us</h2>
+          <p class=\"mb-4\">Dicit partem indoctum duo te, eum suas singulis omitt eu. In nec tation graecis vivendo, at quo illud omnesqe.</p>
+        </header>
+        <div class=\"row\">
+          <div class=\"col-lg-6\">
+            <div class=\"accordion pb-5\" id=\"accordion\">
+              <div class=\"accordion-item border-0 rounded-0 mb-2\">
+                <div class=\"accordion-header p-0 border-0\" id=\"headingOne\">
+                  <h6 class=\"mb-0\"><a class=\"accordion-button py-3 px-4 collapsed\" data-bs-toggle=\"collapse\" href=\"#collapseOne\" aria-expanded=\"false\" aria-controls=\"collapseOne\">Sunrise prayer</a></h6>
+                </div>
+                <div class=\"collapse\" id=\"collapseOne\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" style=\"\">
+                  <div class=\"pb-3 px-4 bg-primary text-white\">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt. Anim pariatur cliche reprehenderit, enim eiusmod high lif</div>
+                </div>
+              </div>
+              <div class=\"accordion-item border-0 rounded-0 mb-2\">
+                <div class=\"accordion-header p-0 border-0\" id=\"headingTwo\">
+                  <h6 class=\"mb-0\"><a class=\"accordion-button py-3 px-4 collapsed\" data-bs-toggle=\"collapse\" href=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">Love and faith</a></h6>
+                </div>
+                <div class=\"collapse\" id=\"collapseTwo\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" style=\"\">
+                  <div class=\"pb-3 px-4 bg-primary text-white\">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt Nihil anim keffiyeh helvetica.</div>
+                </div>
+              </div>
+              <div class=\"accordion border-0 rounded-0\">
+                <div class=\"accordion-header p-0 border-0\" id=\"headingThree\">
+                  <h6 class=\"mb-0\"><a class=\"accordion-button py-3 px-4 collapsed\" data-bs-toggle=\"collapse\" href=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">Wekend services</a></h6>
+                </div>
+                <div class=\"collapse\" id=\"collapseThree\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" style=\"\">
+                  <div class=\"pb-3 px-4 bg-primary text-white\">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt Nihil anim keffiyeh helvetica. Anim pariatur cliche reprehenderit, enim eiusmod high lif</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=\"col-lg-6\">    
+            <div class=\"row gy-4\">
+              <div class=\"col-lg-6\">
+                <p class=\"text-serif mb-0 text-primary text-small\">Heading level five</p>
+                <h5> <span class=\"text-primary\">1.</span>We Come To Serve</h5>
+                <p class=\"text-small mb-0\">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><a class=\"btn btn-link px-0 text-decoration-none\" href=\"\">Learn more<i class=\"fas fa-long-arrow-alt-right ms-2\"></i></a>
+              </div>
+              <div class=\"col-lg-6\">
+                <p class=\"text-serif mb-0 text-primary text-small\">Heading level five</p>
+                <h5> <span class=\"text-primary\">2.</span>Church Belief</h5>
+                <p class=\"text-small mb-0\">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><a class=\"btn btn-link px-0 text-decoration-none\" href=\"\">Learn more<i class=\"fas fa-long-arrow-alt-right ms-2\"></i></a>
+              </div>
+              <div class=\"col-lg-6\">
+                <p class=\"text-serif mb-0 text-primary text-small\">Heading level five</p>
+                <h5> <span class=\"text-primary\">3.</span>Church Mission</h5>
+                <p class=\"text-small mb-0\">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><a class=\"btn btn-link px-0 text-decoration-none\" href=\"\">Learn more<i class=\"fas fa-long-arrow-alt-right ms-2\"></i></a>
+              </div>
+              <div class=\"col-lg-6\">
+                <p class=\"text-serif mb-0 text-primary text-small\">Heading level five</p>
+                <h5> <span class=\"text-primary\">4.</span>Church Community</h5>
+                <p class=\"text-small mb-0\">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><a class=\"btn btn-link px-0 text-decoration-none\" href=\"\">Learn more<i class=\"fas fa-long-arrow-alt-right ms-2\"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class=\"p-4 p-lg-5 text-center bg-light mb-5\">
+          <blockquote class=\"blockquote mb-4\">
+            <p class=\"text-serif\">My soul is weary with sorrow; strengthen me according to your word.</p>
+          </blockquote>
+          <figcaption class=\"blockquote-footer mb-0\">
+            <cite class=\"text-small\" title=\"Psalm 119:28 NIV\">Psalm 119:28 NIV</cite>
+          </figcaption>
+        </figure>
+        <div class=\"row align-items-stretch gx-0 demo-rounded overflow-hidden gy-lg-0 gy-2\">
+          <div class=\"col-lg-4 col-md-6 bg-center bg-cover\" style=\"min-height: 200px; background: url(https://d19m59y37dris4.cloudfront.net/church/2-0/img/about-img-1.289beb64.jpg)\"></div>
+          <div class=\"col-lg-4 col-md-6 p-5 bg-light\">
+            <h3 class=\"h4 mb-3\">Sanctuary</h3>
+            <p class=\"mb-0 text-small text-muted mb-4\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p><a class=\"btn btn-outline-primary btn-sm\" href=\"#!\">Read more</a>
+          </div>
+          <div class=\"col-lg-4 col-md-6 bg-center bg-cover\" style=\"min-height: 200px; background: url(https://d19m59y37dris4.cloudfront.net/church/2-0/img/about-img-2.4a49b989.jpg)\"></div>
+          <div class=\"col-lg-4 col-md-6 p-5 bg-light\">
+            <h3 class=\"h4 mb-3\">Classics</h3>
+            <p class=\"mb-0 text-small text-muted mb-4\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p><a class=\"btn btn-outline-primary btn-sm\" href=\"#!\">Read more</a>
+          </div>
+          <div class=\"col-lg-4 col-md-6 bg-center bg-cover\" style=\"min-height: 200px; background: url(https://d19m59y37dris4.cloudfront.net/church/2-0/img/about-img-3.97fbc3d9.jpg)\"></div>
+          <div class=\"col-lg-4 col-md-6 p-5 bg-light\">
+            <h3 class=\"h4 mb-3\">Infants-Preschool</h3>
+            <p class=\"mb-0 text-small text-muted mb-4\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p><a class=\"btn btn-outline-primary btn-sm\" href=\"#!\">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p>
+      <a class=\"btn btn-primary\" data-bs-toggle=\"collapse\" href=\"#multiCollapseExample1\" role=\"button\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1\">Toggle first element</a>
+      <button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#multiCollapseExample2\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample2\">Toggle second element</button>
+      <button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\".multi-collapse\" aria-expanded=\"false\" aria-controls=\"multiCollapseExample1 multiCollapseExample2\">Toggle both elements</button>
+    </p>
+    <div class=\"row\">
+      <div class=\"col\">
+        <div class=\"collapse multi-collapse\" id=\"multiCollapseExample1\">
+          <div class=\"card card-body\">
+            Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+      <div class=\"col\">
+        <div class=\"collapse multi-collapse\" id=\"multiCollapseExample2\">
+          <div class=\"card card-body\">
+            Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Works Section-->
     <section id=\"works\">
       <div class=\"container-fluid px-0\">
@@ -476,8 +619,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
           <div
             class=\"col-lg-6 half-page-banner bg-cover\"
             style=\"background: url(/";
-        // line 512
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 512, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 512, $this->source)), "html", null, true);
+        // line 661
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 661, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 661, $this->source)), "html", null, true);
         echo "/images/rice.jpg)\"
           ></div>
           <div class=\"col-lg-6 bg-light py-lg-5\">
@@ -564,8 +707,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 </li> -->
               </ul>
               <!-- <img class=\"mb-3\" src=\"/";
-        // line 597
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 597, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 597, $this->source)), "html", null, true);
+        // line 746
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 746, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 746, $this->source)), "html", null, true);
         echo "/images/signature.png\" alt=\"...\" width=\"90\" /> -->
               <!-- <h6 class=\"text-uppercase mb-0\">Richard Wood</h6> -->
               <p class=\"text-serif text-primary text-small mb-0\">
@@ -590,8 +733,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 620
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 620, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 620, $this->source)), "html", null, true);
+        // line 769
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 769, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 769, $this->source)), "html", null, true);
         echo "/images/sermon-1.jpg\"
                   alt=\"...\"
                 /></div
@@ -611,8 +754,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 638
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 638, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 638, $this->source)), "html", null, true);
+        // line 787
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 787, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 787, $this->source)), "html", null, true);
         echo "/images/sermon-2.jpg\"
                   alt=\"...\"
                 /></div
@@ -634,8 +777,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
                 <img
                   class=\"img-fluid w-100\"
                   src=\"/";
-        // line 658
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 658, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 658, $this->source)), "html", null, true);
+        // line 807
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 807, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 807, $this->source)), "html", null, true);
         echo "/images/sermon-3.jpg\"
                   alt=\"...\"
                 /></div
@@ -660,8 +803,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       class=\"bg-cover bg-fixed shadow-inner\"
       id=\"volunteer\"
       style=\"background: url(/";
-        // line 681
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 681, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 681, $this->source)), "html", null, true);
+        // line 830
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 830, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 830, $this->source)), "html", null, true);
         echo "/images/divider-img.jpg)\"
     >
       <div class=\"primary-overlay py-5\">
@@ -760,8 +903,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
           <div
             class=\"col-lg-6 half-page-banner bg-cover bg-center order-1 order-lg-2\"
             style=\"background: url(/";
-        // line 778
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 778, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 778, $this->source)), "html", null, true);
+        // line 927
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 927, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 927, $this->source)), "html", null, true);
         echo "/images/img-donation.jpg)\"
           ></div>
         </div>
@@ -823,8 +966,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
             <div
               class=\"contact-img bg-center bg-cover\"
               style=\"height: 30rem; background: url(/";
-        // line 838
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 838, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 838, $this->source)), "html", null, true);
+        // line 987
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 987, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 987, $this->source)), "html", null, true);
         echo "/images/CambriaChurch.jpg)\"
             ></div>
           </div>
@@ -884,26 +1027,26 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <div class=\"row align-items-center text-center gy-2\">
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 896
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 896, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 896, $this->source)), "html", null, true);
+        // line 1045
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1045, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1045, $this->source)), "html", null, true);
         echo "/images/logo-1.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 899
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 899, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 899, $this->source)), "html", null, true);
+        // line 1048
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1048, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1048, $this->source)), "html", null, true);
         echo "/images/logo-2.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 902
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 902, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 902, $this->source)), "html", null, true);
+        // line 1051
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1051, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1051, $this->source)), "html", null, true);
         echo "/images/logo-3.svg\" alt=\"...\" width=\"120\" />
           </div>
           <div class=\"col-lg-3 col-sm-6\">
             <img src=\"/";
-        // line 905
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 905, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 905, $this->source)), "html", null, true);
+        // line 1054
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1054, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1054, $this->source)), "html", null, true);
         echo "/images/logo-4.svg\" alt=\"...\" width=\"120\" />
           </div>
         </div>
@@ -917,8 +1060,8 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
         <!-- <div class=\"row mb-5 pb-5\">
           <div class=\"col-md-4 col-sm-12\">
             <img class=\"mb-3\" src=\"/";
-        // line 917
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 917, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 917, $this->source)), "html", null, true);
+        // line 1066
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1066, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1066, $this->source)), "html", null, true);
         echo "/images/logo-footer.svg\" alt=\"...\" width=\"140\" />
             <p class=\"text-small text-muted\">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -989,22 +1132,22 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
       </div>
     </footer>
     <!-- JavaScript files-->
-    <script src=\"/";
-        // line 987
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 987, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 987, $this->source)), "html", null, true);
-        echo "/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
     ";
-        // line 989
+        // line 1137
+        echo "    ";
+        // line 1138
+        echo "    ";
+        // line 1139
         echo "    <script src=\"/";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 989, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 989, $this->source)), "html", null, true);
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1139, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1139, $this->source)), "html", null, true);
         echo "/js/countdown.js\"></script>
     <script src=\"/";
-        // line 990
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 990, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 990, $this->source)), "html", null, true);
+        // line 1140
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1140, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1140, $this->source)), "html", null, true);
         echo "/vendor/progressbar.js/progressbar.js\"></script>
     <script src=\"/";
-        // line 991
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 991, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 991, $this->source)), "html", null, true);
+        // line 1141
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, ($this->sandbox->ensureToStringAllowed(($context["base_path"] ?? null), 1141, $this->source) . $this->sandbox->ensureToStringAllowed(($context["directory"] ?? null), 1141, $this->source)), "html", null, true);
         echo "/js/front.js\"></script>
     <!-- <script>
       // ------------------------------------------------------- //
@@ -1069,7 +1212,7 @@ class __TwigTemplate_a82eaefd1031df483fa534dd3c37f040 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  1007 => 991,  1003 => 990,  998 => 989,  994 => 987,  921 => 917,  906 => 905,  900 => 902,  894 => 899,  888 => 896,  827 => 838,  764 => 778,  664 => 681,  638 => 658,  615 => 638,  594 => 620,  568 => 597,  480 => 512,  257 => 292,  253 => 290,  218 => 254,  174 => 213,  151 => 193,  147 => 192,  127 => 175,  123 => 174,  101 => 155,  97 => 153,  72 => 123,  68 => 122,  62 => 119,  57 => 116,  52 => 84,  46 => 81,  44 => 78,  43 => 77,  42 => 76,  41 => 75,  40 => 74,  39 => 71,);
+        return array (  1150 => 1141,  1146 => 1140,  1141 => 1139,  1139 => 1138,  1137 => 1137,  1064 => 1066,  1049 => 1054,  1043 => 1051,  1037 => 1048,  1031 => 1045,  970 => 987,  907 => 927,  807 => 830,  781 => 807,  758 => 787,  737 => 769,  711 => 746,  623 => 661,  248 => 289,  244 => 287,  209 => 251,  165 => 210,  144 => 192,  124 => 175,  101 => 155,  97 => 153,  72 => 123,  68 => 122,  62 => 119,  57 => 116,  52 => 84,  46 => 81,  44 => 78,  43 => 77,  42 => 76,  41 => 75,  40 => 74,  39 => 71,);
     }
 
     public function getSourceContext()
