@@ -24,7 +24,9 @@
         "drupal/paragraphs": "^1.17",
         "drupal/theme_switcher": "^2.0",
         "drupal/twig_tweak": "^3.3",
-        "drush/drush": "^12.4"
+        "drush/drush": "^12.4",
+        "sdubois/amezmo-drupal-integrations": "dev-main",
+        "cweagans/composer-patches": "^1.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -38,7 +40,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
